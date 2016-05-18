@@ -1,0 +1,15 @@
+<%= form_for :enduser do |u| %>
+      <p>
+        <%= u.label :title %><br>
+        <%= u.text_field :title %>
+      </p>
+
+      <p>
+        <%= u.label :background %><br>
+        <%= u.text_field :background %>
+      </p>
+     <br >
+      <p>
+        <%= u.submit %>
+      </p>
+    <% end %>
