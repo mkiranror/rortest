@@ -1,11 +1,8 @@
 <div id="dynamic_color_change" style = "color: <%= @enduser.background %>">
-sample
+  <%=@enduser.title%>
 </div>
-<%=@enduser.title%>
 <%=@enduser.background%>
 
-
 <script>
-
   $("#dynamic_color_change").css("background-color", <%= @enduser.color %>)
 </script>

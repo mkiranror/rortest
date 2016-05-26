@@ -1,15 +1,20 @@
-<%= form_for :enduser do |u| %>
+<%= form_for :enduser,:html => {:class => "form-inline"} do |u| %>
       <p>
         <%= u.label :title %><br>
-        <%= u.text_field :title %>
+        <%= u.text_field :title,class:"col-xs-6" %>
       </p>
-
+      <br>
+     <p > 
+       <%= u.label :font %><br>
+        <%= u.text_field :font,class:"col-xs-6" %>
+      </p>
+      <br>
       <p>
         <%= u.label :background %><br>
-        <%= u.text_field :background %>
+        <%= u.text_field :background,class:"col-xs-6" %>
       </p>
      <br >
       <p>
-        <%= u.submit %>
+        <%= u.submit  :class => "btn btn-success"%>
       </p>
     <% end %>
